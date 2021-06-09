@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="control.installation.progress_notified_at">33624</string>
+    <string name="control.event.pending_events"></string>
+    <string name="execution.current_action_name">finished-execution</string>
+    <string name="control.log.last_event_log_hash_code">961</string>
+    <string name="control.log.last_event_log_timestamp">1597321467090</string>
+    <string name="control.installation.progress">-1.0</string>
+    <string name="control.installation.device_policy_updated_at">1597321465340</string>
+    <string name="control.device.boot_count">1</string>
+    <string name="logging.clearcut_event_logger.current_execution_id">33603</string>
+    <string name="execution.current_execution_id">33603</string>
+    <string name="execution.current_action_params"></string>
+    <string name="control.installation.current_update_url"></string>
+    <string name="control.device.last_elapsed_realtime">49084</string>
+    <string name="control.device.provisioned_at">1597321465387</string>
+    <string name="control.installation.status">0</string>
+</map>

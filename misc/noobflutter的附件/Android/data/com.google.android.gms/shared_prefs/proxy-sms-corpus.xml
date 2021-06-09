@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="db_version" value="4" />
+    <int name="last_sms_id" value="7" />
+    <boolean name="enable_sms_corpus_with_appdatasearchhelper" value="true" />
+    <long name="last_deletion_time_ms" value="1597321465278" />
+    <long name="last_sms_date" value="1597321737141" />
+</map>

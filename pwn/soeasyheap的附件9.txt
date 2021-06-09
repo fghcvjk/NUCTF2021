@@ -1,0 +1,3 @@
+ip: 82.157.107.61
+port: 50902
+protocol: tcp

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="adid_key">15f8f02b-5434-4e5c-b74f-a6d28c36aecc</string>
+    <boolean name="enable_debug_logging" value="false" />
+    <boolean name="enable_limit_ad_tracking" value="false" />
+    <int name="adid_reset_count" value="1" />
+    <string name="fake_adid_key"></string>
+    <boolean name="using_cert" value="false" />
+</map>

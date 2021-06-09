@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="audio_media_files_indexing_enabled" value="true" />
+    <long name="index_built_until_state" value="53" />
+    <boolean name="id_based_mediastore_indexing_enabled" value="true" />
+    <string name="maintenance_task_config">7 12 true</string>
+</map>

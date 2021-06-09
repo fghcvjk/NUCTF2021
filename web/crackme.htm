@@ -1,0 +1,22 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php
+<br></span><span style="color: #FF8000">//what&nbsp;you&nbsp;want&nbsp;to&nbsp;see&nbsp;is&nbsp;in&nbsp;ssssrf.php
+<br></span><span style="color: #0000BB">error_reporting</span><span style="color: #007700">(</span><span style="color: #0000BB">0</span><span style="color: #007700">);
+<br></span><span style="color: #0000BB">highlight_file</span><span style="color: #007700">(</span><span style="color: #0000BB">__FILE__</span><span style="color: #007700">);
+<br>if(isset(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #DD0000">'crack_me.com'</span><span style="color: #007700">]))
+<br>{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$filename</span><span style="color: #007700">=</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #DD0000">'crack_me.com'</span><span style="color: #007700">];
+<br>&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">stripos</span><span style="color: #007700">(</span><span style="color: #0000BB">$filename</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'bingbing'</span><span style="color: #007700">)&gt;</span><span style="color: #0000BB">0</span><span style="color: #007700">){&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #0000BB">file_get_contents</span><span style="color: #007700">(</span><span style="color: #0000BB">$filename</span><span style="color: #007700">);&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>&nbsp;&nbsp;&nbsp;&nbsp;else{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;die(</span><span style="color: #DD0000">"you&nbsp;don't&nbsp;like&nbsp;&nbsp;bingbing&nbsp;???"</span><span style="color: #007700">);
+<br>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>}
+<br>else
+<br>{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;die(</span><span style="color: #DD0000">"can't&nbsp;pass&nbsp;the&nbsp;level?hai&nbsp;xiang&nbsp;kai&nbsp;junjian?"</span><span style="color: #007700">);
+<br>}</span>
+</span>
+</code>can't pass the level?hai xiang kai junjian?</body></html>

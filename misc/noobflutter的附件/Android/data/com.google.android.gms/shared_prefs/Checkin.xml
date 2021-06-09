@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="CheckinService_lastSimOperator">310260</string>
+    <string name="CheckinService_lastSim">[89014103211118510720:310260000000000]</string>
+    <long name="CheckinService_checkinCompleteBroadcastTime" value="1597324288890" />
+</map>

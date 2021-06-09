@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="clear_interactions_service_period_seconds" value="86400" />
+    <boolean name="clear_interactions_service_enabled" value="false" />
+    <long name="clear_interactions_service_flex_seconds" value="10" />
+    <boolean name="clear_interactions_service_requires_charging" value="true" />
+    <boolean name="clear_interactions_service_use_flex" value="false" />
+    <boolean name="clear_interactions_service_requires_device_idle" value="true" />
+    <boolean name="clear_interactions_service_persist_task" value="false" />
+</map>

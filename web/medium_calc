@@ -1,0 +1,54 @@
+const express = require("express");
+const cookieSession = require("cookie-session");
+const { Parser } = require("expr-eval");
+
+const fs = require("fs");
+const path = require("path");
+const crypto = require("crypto");
+
+const template = fs.readFileSync("./src/index.html").toString();
+function render(results) {
+  return template.replace("{{results}}", results.join("<br/>"));
+}
+
+const app = express();
+
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
+app.use(cookieSession({
+  keys: [crypto.randomBytes(16).toString("hex")]
+}));
+
+app.post("/", function (req, res) {
+  let result = "";
+  const results = req.session.results || [];
+  const { e } = req.body;
+  if (e) {
+    try {
+      result = new Parser().evaluate(e);
+      results.unshift(result);
+    } catch {
+      //
+    }
+  }
+  if (results.length > 13) {
+    results.pop();
+  }
+  req.session.results = results;
+  res.send(render(req.session.results));
+});
+
+app.get("/source", function (req, res) {
+  res.set("Content-Type", "text/javascript;charset=utf-8");
+  res.send(fs.readFileSync(path.join(__dirname, "index.js")));
+});
+
+app.get("/", function (req, res) {
+  res.set("Content-Type", "text/html;charset=utf-8");
+  res.send(render(req.session.results = req.session.results || []))
+});
+
+app.listen(80, "0.0.0.0", () => {
+  console.log("Start listening")
+});
